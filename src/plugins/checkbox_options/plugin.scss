@@ -9,3 +9,34 @@
 		margin-left: 0.5rem;
 	}
 }
+
+.ts-dropdown-content {
+	.tomselect-checkbox {
+		border-radius: 2px;
+		border: 1px solid #D1D5DB;
+		color: #5EEAD4;
+
+		&:hover {
+			cursor: pointer;
+			border-color: #2DD4BF;
+		}
+
+		&:active {
+			border-color: #0D9488;
+		}
+	}
+
+	.option {
+		&:hover {
+			.tomselect-checkbox {
+				border-color: #2DD4BF;
+			}
+		}
+
+		&:active {
+			.tomselect-checkbox {
+				border-color: #0D9488;
+			}
+		}
+	}
+}
