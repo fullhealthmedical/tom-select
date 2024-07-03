@@ -1,7 +1,7 @@
 import {nodeResolve} from '@rollup/plugin-node-resolve'; // so Rollup can resolve imports without file extensions and `node_modules`
 import babel from '@rollup/plugin-babel';
 import terser from '@rollup/plugin-terser';
-import pkg from '../package.json' assert { type: "json" };
+import pkg from '../package.json' with { type: "json" };
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
