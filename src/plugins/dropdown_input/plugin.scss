@@ -9,13 +9,32 @@
 	}
 
 	.dropdown-input {
-		border: 1px solid $select-color-border;
-		border-width: 0 0 1px;
+		border: 1px solid $select-color-dropdown-border;
+		border-width: 1px;
 		display: block;
-		padding: $select-padding-y $select-padding-x;
+		padding: $select-padding-y $select-padding-x $select-padding-y 44px;
 		box-shadow: $select-shadow-input;
 		width: 100%;
 		background: transparent;
+		box-shadow: none;
+		border-radius: 6px;
+
+		&:focus{
+			box-shadow: none;
+			border-color: $select-color-dropdown-border;
+		}
+	}
+
+	.dropdown-input-wrap {
+		position: relative;
+	}
+
+	.dropdown-input-icon {
+		position: absolute;
+		left: 12px;
+		top: 8px;
+		height: 24px;
+		width: 24px;
 	}
 
 	&.focus .#{$select-ns}-dropdown .dropdown-input{
