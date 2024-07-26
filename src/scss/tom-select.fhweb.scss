@@ -30,6 +30,11 @@ $select-color-dropdown-item-active-text: #4B5563;
 $select-padding-dropdown-item-y: 8px;
 $select-padding-dropdown-item-x: 12px;
 
+/** multi */
+$select-color-item-text: #4B5563;
+$select-padding-item-y: 2px;
+$select-padding-item-x: 10px;
+
 
 @import "tom-select";
 @include ts-caret;
@@ -49,14 +54,21 @@ $select-padding-dropdown-item-x: 12px;
 
 		.#{$select-ns}-control {
 			[data-value] {
-				text-shadow: 0 1px 0 rgba(0, 51, 83, 30%);
-				border-radius: 3px;
-				@include selectize-vertical-gradient(#1da7ee, #178ee9);
+				border-radius: 24px;
+				background-color: #E5E7EB;
+				font-size: 12px;
+				line-height: 16px;
+				font-weight: 500;
 
 				box-shadow: 0 1px 0 rgba(0, 0, 0, 20%),inset 0 1px rgba(255, 255, 255, 3%);
 
 				&.active {
-					@include selectize-vertical-gradient(#008fd8, #0075cf);
+					background-color: #E5E7EB;
+					border-color: #E5E7EB;
+				}
+
+				.remove {
+					padding: 5px;
 				}
 			}
 		}

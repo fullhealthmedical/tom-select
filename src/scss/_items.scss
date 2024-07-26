@@ -43,12 +43,12 @@
 		padding: $select-padding-item-y $select-padding-item-x;
 		background: $select-color-item;
 		color: $select-color-item-text;
-		border: $select-width-item-border solid $select-color-item-border;
+		// border: $select-width-item-border solid $select-color-item-border;
 
 		&.active {
 			background: $select-color-item-active;
-			color: $select-color-item-active-text;
-			border: $select-width-item-border solid $select-color-item-active-border;
+			// color: $select-color-item-active-text;
+			// border: $select-width-item-border solid $select-color-item-active-border;
 		}
 	}
 
