@@ -37,16 +37,17 @@
 	}
 
 	.item .remove {
-		border-left: 1px solid $select-color-item-border;
-		margin-left: $select-padding-item-x;
+		// border-left: 1px solid $select-color-item-border;
+		margin-left: 4px;
+		border-radius: 50%;
 	}
 
 	.item.active .remove {
-		border-left-color: $select-color-item-active-border;
+		// border-left-color: $select-color-item-active-border;
 	}
 
 	&.disabled .item .remove {
-		border-left-color: lighten(desaturate($select-color-item-border, 100%), $select-lighten-disabled-item-border);
+		// border-left-color: lighten(desaturate($select-color-item-border, 100%), $select-lighten-disabled-item-border);
 	}
 }
 
@@ -54,7 +55,7 @@
 	.item {
 		padding-left:	0 !important;
 	}
-	
+
 	.item .remove {
 		border-right: 1px solid $select-color-item-border;
 		margin-right: $select-padding-item-x;

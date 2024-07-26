@@ -189,6 +189,7 @@ module.exports = function(grunt) {
 				files: [{
 					'build/scss/tom-select.scss': ['src/scss/tom-select.scss'],
 					'build/scss/tom-select.default.scss': ['src/scss/tom-select.default.scss'],
+					'build/scss/tom-select.fhweb.scss': ['src/scss/tom-select.fhweb.scss'],
 					'build/scss/tom-select.bootstrap4.scss': ['src/scss/tom-select.bootstrap4.scss'],
 					'build/scss/tom-select.bootstrap5.scss': ['src/scss/tom-select.bootstrap5.scss'],
 					'build/scss/_dropdown.scss': ['src/scss/_dropdown.scss'],
@@ -234,6 +235,7 @@ module.exports = function(grunt) {
 				files: [{
 					'build/css/tom-select.css': ['src/scss/tom-select.scss'],
 					'build/css/tom-select.default.css': ['src/scss/tom-select.default.scss'],
+					'build/css/tom-select.fhweb.css': ['src/scss/tom-select.fhweb.scss'],
 					'build/css/tom-select.bootstrap4.css': ['src/scss/-tom-select.bootstrap4.scss'],
 					'build/css/tom-select.bootstrap5.css': ['src/scss/-tom-select.bootstrap5.scss'],
 				}]
@@ -275,6 +277,8 @@ module.exports = function(grunt) {
 				files: [{
 					'build/css/tom-select.min.css': ['build/css/tom-select.css'],
 					'build/css/tom-select.default.min.css': ['build/css/tom-select.default.css'],
+					'build/css/tom-select.fhweb.min.css': ['build/css/tom-select.fhweb.css'],
+					'../fhweb/vendor/assets/stylesheets/tom-select.fhweb.min.css': ['build/css/tom-select.fhweb.css'],
 					'build/css/tom-select.bootstrap4.min.css': ['build/css/tom-select.bootstrap4.css'],
 					'build/css/tom-select.bootstrap5.min.css': ['build/css/tom-select.bootstrap5.css'],
 				}]
